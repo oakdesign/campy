@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Extract Only",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/camreader.py",
+        "args": ["input/Save0.cam", "output"],
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Extract and Process",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/camreader.py",
+        "args": ["input/Save0.cam", "output", "--process"],
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Extract and Process tac",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/camreader.py",
+        "args": ["input/ground.tac", "output", "--process"],
+        "console": "integratedTerminal",
+        "justMyCode": false
+      }
+    ]
+  }
